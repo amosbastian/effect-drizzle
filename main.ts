@@ -1,10 +1,10 @@
+import { Schema } from "@effect/schema";
+import * as PgDrizzle from "@effect/sql-drizzle/Pg";
 import "dotenv/config";
+import { eq } from "drizzle-orm";
 import { Effect } from "effect";
 import { DatabaseLive } from "./database";
-import * as PgDrizzle from "@effect/sql-drizzle/Pg";
 import { SelectUserSchema, userTable } from "./schema";
-import { eq } from "drizzle-orm";
-import { Schema } from "@effect/schema";
 
 Effect.gen(function* () {
   const db = yield* PgDrizzle.PgDrizzle;

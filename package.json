@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "dev": "tsx main.ts",
+    "dev-drizzle": "tsx main-drizzle.ts",
     "db:check": "drizzle-kit check",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
