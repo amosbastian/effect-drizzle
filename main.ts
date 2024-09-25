@@ -14,10 +14,10 @@ Effect.gen(function* () {
   const user = (yield* db.select().from(userTable)).at(0);
 
   if (user) {
-    yield* Effect.log(typeof user.id, user.id);
-    yield* Effect.log(typeof user.createdAt, user.createdAt);
-    yield* Effect.log(typeof user.updatedAt, user.updatedAt);
-    yield* Effect.log(typeof user.deletedAt, user.deletedAt);
+    console.log(typeof user.id, user.id);
+    console.log(typeof user.createdAt, user.createdAt);
+    console.log(typeof user.updatedAt, user.updatedAt);
+    console.log(typeof user.deletedAt, user.deletedAt);
     Schema.decodeUnknownSync(SelectUserSchema)(user);
   }
 }).pipe(Effect.provide(DatabaseLive), Effect.runPromise);
