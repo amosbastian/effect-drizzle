@@ -4,7 +4,7 @@ import "dotenv/config";
 import { eq } from "drizzle-orm";
 import { Effect } from "effect";
 import { DatabaseLive } from "./database";
-import { SelectUserSchema, userTable } from "./schema";
+import {  userTable } from "./schema";
 
 Effect.gen(function* () {
   const db = yield* PgDrizzle.PgDrizzle;
@@ -18,6 +18,5 @@ Effect.gen(function* () {
     console.log(typeof user.createdAt, user.createdAt);
     console.log(typeof user.updatedAt, user.updatedAt);
     console.log(typeof user.deletedAt, user.deletedAt);
-    Schema.decodeUnknownSync(SelectUserSchema)(user);
   }
 }).pipe(Effect.provide(DatabaseLive), Effect.runPromise);

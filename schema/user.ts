@@ -1,6 +1,5 @@
 import { sql } from "drizzle-orm";
 import { pgTable, text, timestamp, uniqueIndex } from "drizzle-orm/pg-core";
-import { createInsertSchema, createSelectSchema } from "../drizzle-schema";
 
 export const userTable = pgTable(
   "user",
@@ -33,5 +32,3 @@ export const userTable = pgTable(
   })
 );
 
-export const InsertUserSchema = createInsertSchema(userTable);
-export const SelectUserSchema = createSelectSchema(userTable);

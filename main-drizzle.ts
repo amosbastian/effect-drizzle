@@ -3,7 +3,7 @@ import "dotenv/config";
 import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/node-postgres";
 import pg from "pg";
-import { SelectUserSchema, userTable } from "./schema";
+import {  userTable } from "./schema";
 import * as schema from "./schema/index";
 
 async function main() {
@@ -31,7 +31,6 @@ async function main() {
     console.log(typeof user.createdAt, user.createdAt);
     console.log(typeof user.updatedAt, user.updatedAt);
     console.log(typeof user.deletedAt, user.deletedAt);
-    Schema.decodeUnknownSync(SelectUserSchema)(user);
   }
 
   await client.end();
