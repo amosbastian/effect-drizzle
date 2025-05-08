@@ -1,4 +1,3 @@
-import { Schema } from "@effect/schema";
 import "dotenv/config";
 import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/node-postgres";

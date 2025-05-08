@@ -1,4 +1,3 @@
-import { Schema } from "@effect/schema";
 import * as PgDrizzle from "@effect/sql-drizzle/Pg";
 import "dotenv/config";
 import { eq } from "drizzle-orm";

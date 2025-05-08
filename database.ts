@@ -2,7 +2,7 @@ import * as PgDrizzle from "@effect/sql-drizzle/Pg";
 import { PgClient } from "@effect/sql-pg";
 import { Config, Layer } from "effect";
 
-export const PgLive = PgClient.layer({
+export const PgLive = PgClient.layerConfig({
   url: Config.redacted("DATABASE_URL"),
 });
 

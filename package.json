@@ -18,20 +18,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@effect/schema": "^0.74.1",
-    "@effect/sql": "^0.13.4",
-    "@effect/sql-drizzle": "^0.11.4",
-    "@effect/sql-pg": "^0.13.4",
-    "drizzle-orm": "^0.33.0",
-    "effect": "^3.8.4",
-    "pg": "^8.13.0"
+    "@effect/sql": "^0.33.21",
+    "@effect/sql-drizzle": "^0.32.21",
+    "@effect/sql-pg": "^0.34.21",
+    "drizzle-orm": "^0.31",
+    "effect": "^3.14.21",
+    "pg": "^8.15.6"
   },
   "devDependencies": {
-    "@tsconfig/node20": "^20.1.4",
-    "@types/node": "^22.7.0",
-    "@types/pg": "^8.11.10",
-    "dotenv": "^16.4.5",
-    "drizzle-kit": "^0.24.2",
-    "tsx": "^4.19.1"
+    "@tsconfig/node20": "^20.1.5",
+    "@types/node": "^22.15.17",
+    "@types/pg": "^8.15.0",
+    "dotenv": "^16.5.0",
+    "drizzle-kit": "^0.31.1",
+    "tsx": "^4.19.4"
   }
 }
